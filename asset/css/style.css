@@ -1,0 +1,842 @@
+spotify-app .frame {
+  background-color: #fff;
+}
+
+spotify-app .frame.expanded {
+  background-color: #fff;
+}
+
+spotify-app .frame .head {
+  background-color: #1b1b1b;
+}
+
+spotify-app .frame .head .actions .action {
+  background-color: #5b5b5b;
+}
+
+spotify-app .frame .head .actions .action:hover {
+  background-color: #1ed760;
+}
+
+spotify-app .frame .head .title {
+  color: #1ed760;
+  font-weight: 500;
+}
+
+spotify-app .frame .body {
+  height: calc( 100% - 38px);
+}
+
+spotify-app .frame .body .spotify__loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: #000;
+}
+
+spotify-app .frame .body .spotify__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #000;
+  height: 100%;
+}
+
+spotify-app .frame .body .spotify__login .spotify__login__header {
+  color: #fff;
+  margin-bottom: 150px;
+}
+
+spotify-app .frame .body .spotify__login .spotify__login__header .spotify__login__logo img {
+  width: 250px;
+}
+
+spotify-app .frame .body .spotify__login .spotify__login__button {
+  margin-bottom: 100px;
+}
+
+spotify-app .frame .body .spotify__login .spotify__login__button button {
+  background-color: #1ed760;
+  color: #fff;
+  border-radius: 45px;
+  min-width: 300px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+spotify-app .frame .body .spotify__container {
+  height: 100%;
+  width: 100%;
+}
+
+spotify-app .frame .body .spotify__container .spotify__discover {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  position: relative;
+}
+
+spotify-app .frame .body .spotify__container::-webkit-scrollbar {
+  width: 10px;
+}
+
+spotify-app .frame .body .discover {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: calc( 100% - 100px);
+  height: calc( 100% - 0px);
+  -webkit-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out;
+}
+
+spotify-app .frame .body .discover.discover__small {
+  height: calc( 100% - 100px);
+}
+
+spotify-app .frame .body .discover .discover__item {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+spotify-app .frame .body .discover .discover__item.discover__home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+spotify-app .frame .body .discover .discover__item.discover__home::-webkit-scrollbar {
+  width: 12px;
+}
+
+spotify-app .frame .body .discover .discover__item.discover__home::-webkit-scrollbar-track {
+  background: transparent;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+spotify-app .frame .body .discover .discover__item.discover__home::-webkit-scrollbar-thumb {
+  background: rgba(248, 248, 248, 0.329);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+spotify-app .frame .body .discover .discover__item.discover__home::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.76);
+}
+
+spotify-app .frame .body .discover .discover__item.discover__home .discover__home__title {
+  margin: 20px 0px;
+  font-size: 2em;
+}
+
+spotify-app .frame .body .discover .discover__item.discover__home .discover__home__top__artists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+spotify-app .frame .body .discover .discover__item.discover__home .discover__home__top__artists .discover__home__top__artists__item {
+  width: 140px;
+  height: 160px;
+  background-color: #333;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+spotify-app .frame .body .discover .discover__item.discover__home .discover__home__top__artists .discover__home__top__artists__item img {
+  width: 120px;
+  height: 120px;
+}
+
+spotify-app .frame .body .discover .discover__item.discover__disabled {
+  display: none;
+}
+
+spotify-app .frame .body .playlist {
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+spotify-app .frame .body .playlist::-webkit-scrollbar {
+  width: 12px;
+}
+
+spotify-app .frame .body .playlist::-webkit-scrollbar-track {
+  background: transparent;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+spotify-app .frame .body .playlist::-webkit-scrollbar-thumb {
+  background: rgba(248, 248, 248, 0.329);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+spotify-app .frame .body .playlist::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.76);
+}
+
+spotify-app .frame .body .playlist .playlist__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+spotify-app .frame .body .playlist .playlist__container .playlist__information {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+spotify-app .frame .body .playlist .playlist__container .playlist__information .playlist__information__cover {
+  width: 120px;
+  height: 120px;
+}
+
+spotify-app .frame .body .playlist .playlist__container .playlist__information .playlist__information__cover img {
+  width: 120px;
+  height: 120px;
+}
+
+spotify-app .frame .body .playlist .playlist__container .playlist__information .playlist__information__meta {
+  margin-left: 10px;
+  max-width: calc( 100% - 200px);
+}
+
+spotify-app .frame .body .playlist .playlist__container .playlist__information .playlist__information__meta .playlist__information__title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+spotify-app .frame .body .playlist .playlist__container .playlist__information .playlist__information__meta .playlist__information__owner {
+  color: #b3b3b3;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+spotify-app .frame .body .playlist .playlist__container .playlist__tracks .playlist__tracks__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+spotify-app .frame .body .tracks__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  min-height: 50px;
+  border-radius: 8px;
+}
+
+spotify-app .frame .body .tracks__container:hover {
+  background-color: #282828;
+}
+
+spotify-app .frame .body .tracks__container .tracks__container__name {
+  width: 25%;
+  margin: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+spotify-app .frame .body .tracks__container .tracks__container__artist {
+  width: 20%;
+  margin: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+spotify-app .frame .body .tracks__container .tracks__container__artist a::before {
+  content: ", ";
+}
+
+spotify-app .frame .body .tracks__container .tracks__container__artist a:first-child::before {
+  content: "";
+}
+
+spotify-app .frame .body .tracks__container .tracks__container__album-name {
+  width: 15%;
+  margin: 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+spotify-app .frame .body .tracks__container .tracks__container__duration {
+  width: 30px;
+  margin: 0 5px;
+}
+
+spotify-app .frame .body .tracks__container .tracks__container__liked-song {
+  width: 30px;
+  margin: 0 5px;
+}
+
+spotify-app .frame .body .tracks__container .tracks__container__liked-song svg {
+  fill: #fff;
+}
+
+spotify-app .frame .body .playlists {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+spotify-app .frame .body .playlists::-webkit-scrollbar {
+  width: 12px;
+}
+
+spotify-app .frame .body .playlists::-webkit-scrollbar-track {
+  background: transparent;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+spotify-app .frame .body .playlists::-webkit-scrollbar-thumb {
+  background: rgba(248, 248, 248, 0.329);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+spotify-app .frame .body .playlists::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.76);
+}
+
+spotify-app .frame .body .playlists .playlists__title {
+  color: #fff;
+  margin: 10px;
+}
+
+spotify-app .frame .body .playlists .playlists__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+spotify-app .frame .body .playlists .playlists__list .playlists__item {
+  border-radius: 5px;
+  width: 170px;
+  height: 230px;
+  margin: 10px;
+  background-color: rgba(31, 31, 31, 0.55);
+  padding: 10px;
+}
+
+spotify-app .frame .body .playlists .playlists__list .playlists__item:hover {
+  background-color: rgba(0, 0, 0, 0.116);
+}
+
+spotify-app .frame .body .playlists .playlists__list .playlists__item .playlists__item_meta .playlists__item__title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-transform: none;
+}
+
+spotify-app .frame .body .playlists .playlists__list .playlists__item .playlists__item_meta .playlists__item__owner {
+  color: #b3b3b3;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  white-space: normal;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-transform: none;
+}
+
+spotify-app .frame .body .playlists .playlists__list .playlists__item .playlists__item__cover {
+  width: 150px;
+  height: 150px;
+}
+
+spotify-app .frame .body .playlists .playlists__list .playlists__item .playlists__item__cover .playlists__item__cover_image {
+  width: 150px;
+  height: 150px;
+}
+
+spotify-app .frame .body .playlists .playlists__list .playlists__item .playlists__item__cover .playlists__item__cover_image.playlists__item__cover__empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #333;
+}
+
+spotify-app .frame .body .playlists .playlists__list .playlists__item .playlists__item__cover .playlists__item__cover_image.playlists__item__cover__empty svg {
+  border-radius: 2px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+spotify-app .frame .body .navigation {
+  border-radius: 5px;
+  background-color: #1f1f1f8c;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+spotify-app .frame .body .navigation .navigation__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+spotify-app .frame .body .navigation .navigation__container .navigation__item .navigation__item__button {
+  margin: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+spotify-app .frame .body .navigation .navigation__container .navigation__item .navigation__item__button svg {
+  fill: #fff;
+}
+
+spotify-app .frame .body .navigation .navigation__container .navigation__item .navigation__item__button:hover {
+  background-color: rgba(255, 255, 255, 0.089);
+}
+
+spotify-app .frame .body .navigation .navigation__container .navigation__item .navigation__item__button.navigation__item__logo {
+  margin-bottom: 50px;
+}
+
+spotify-app .frame .body .navigation .navigation__container .navigation__item .navigation__item__button .navigation__item__icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+spotify-app .frame .body .player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: #181818;
+  color: #fff;
+  -webkit-transition: bottom 1s ease-in-out;
+  transition: bottom 1s ease-in-out;
+  border-top: 1px solid #2c2727;
+}
+
+spotify-app .frame .body .player.player__disabled {
+  bottom: -100px;
+}
+
+spotify-app .frame .body .player .player__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40px;
+  width: 100%;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__track {
+  min-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__track .player__track__cover img {
+  width: 40px;
+  height: 40px;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__track .player__track__meta {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__track .player__track__meta .player__track__title {
+  font-size: 1rem;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__track .player__track__meta .player__track__artists {
+  font-size: 0.7rem;
+  color: #b3b3b3;
+  width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__track .player__track__meta .player__track__artists a::before {
+  content: ", ";
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__track .player__track__meta .player__track__artists a:first-child::before {
+  content: "";
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls {
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button button {
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  outline: 0;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button button svg {
+  fill: #ffff;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button button.play {
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button button.play svg {
+  fill: #000;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button button.player__controls__button__shuffle svg {
+  fill: #1ed760;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button button.player__controls__button__repeat-mode {
+  position: relative;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button button.player__controls__button__repeat-mode svg {
+  fill: #1ed760;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button button.player__controls__button__repeat-mode.player__controls__button__repeat-mode__track::after {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: block;
+  content: "";
+  width: 8px;
+  background-color: #1ed760;
+  height: 8px;
+  border-radius: 50%;
+  color: black;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__button button.player__controls__button__disabled svg {
+  fill: #b3b3b3;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__track {
+  width: 100%;
+  max-width: 600px;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__track .player__controls__track__range {
+  /*Chrome*/
+  /** FF*/
+  /* IE*/
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__track .player__controls__track__range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: #4d4d4d;
+    outline: none;
+    overflow: hidden;
+    -webkit-transition: .2s;
+    -webkit-transition: opacity .2s;
+    transition: opacity .2s;
+    width: 100%;
+  }
+  spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__track .player__controls__track__range::-webkit-slider-runnable-track {
+    height: 20px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
+  }
+  spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__track .player__controls__track__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: -300px 0 0 300px #d3d3d3;
+            box-shadow: -300px 0 0 300px #d3d3d3;
+  }
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__track .player__controls__track__range::-moz-range-progress {
+  background-color: #d3d3d3;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__track .player__controls__track__range::-moz-range-track {
+  background-color: #4d4d4d;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__track .player__controls__track__range::-ms-fill-lower {
+  background-color: #d3d3d3;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__controls .player__controls__track .player__controls__track__range::-ms-fill-upper {
+  background-color: #4d4d4d;
+}
+
+spotify-app .frame .body .player .player__container .player__wrapper .player__stream {
+  min-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
