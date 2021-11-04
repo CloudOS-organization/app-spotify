@@ -1,4 +1,8 @@
 # app-spotify
 Spotify APP for CloudOS
 
-## TODO:
+## TODO
+
+- Likedsongs
+- Search Design
+- Homepage
