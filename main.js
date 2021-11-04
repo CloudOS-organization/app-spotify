@@ -326,7 +326,7 @@ export default class Spotify extends Window {
                 <div class="spotify__login">
                     <div class="spotify__login__header">
                         <div class="spotify__login__logo">
-                            <img src="./app/spotify/asset/img/logo.png">
+                            <img src="https://repo.cloudos.batchcloud.de/spotify/asset/img/logo.png">
                         </div>
                     </div>
                     <div class="spotify__login__button">
