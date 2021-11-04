@@ -314,7 +314,7 @@ export default class Spotify extends Window {
             `;
         } else if (this.loading) {
             const userId = 'cpbasti';
-            const loginUrl = `https://cloudosapi.batchcloud.de/spotify/login?user=${userId}`;
+            const loginUrl = `https://api.cloudos.batchcloud.de/spotify/login?user=${userId}`;
             this.spotifyLoginPopup = window.open(loginUrl,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=400,height=700'); 
             return html`
                 <div class="spotify__loading">
